@@ -235,6 +235,7 @@
     <Compile Include="IDatabinder.cs" />
     <Compile Include="Id\Assigned.cs" />
     <Compile Include="Id\CounterGenerator.cs" />
+    <Compile Include="Id\Enhanced\TableGenerator.cs" />
     <Compile Include="Id\ForeignGenerator.cs" />
     <Compile Include="Id\GuidCombGenerator.cs" />
     <Compile Include="Id\GuidGenerator.cs" />
@@ -280,8 +281,10 @@
     <Compile Include="ISessionFactory.cs" />
     <Compile Include="ITransaction.cs" />
     <Compile Include="LazyInitializationException.cs" />
+    <Compile Include="Linq\Clauses\NhHavingClause.cs" />
     <Compile Include="Linq\Clauses\NhJoinClause.cs" />
     <Compile Include="Linq\Functions\DictionaryGenerator.cs" />
+    <Compile Include="Linq\Visitors\NhPartialEvaluatingExpressionTreeVisitor.cs" />
     <Compile Include="Linq\QuerySourceNamer.cs" />
     <Compile Include="Linq\ReWriters\AddJoinsReWriter.cs" />
     <Compile Include="Linq\ReWriters\MoveOrderByToEndRewriter.cs" />
@@ -983,7 +986,7 @@
     <Compile Include="Linq\NhLinqExpressionReturnType.cs" />
     <Compile Include="Linq\DefaultQueryProvider.cs" />
     <Compile Include="Linq\Visitors\ExpressionKeyVisitor.cs" />
-    <Compile Include="Linq\GroupBy\GroupByAggregateDetectionVisitor.cs" />
+    <Compile Include="Linq\GroupBy\IsNonAggregatingGroupByDetectionVisitor.cs" />
     <Compile Include="Linq\GroupBy\AggregatingGroupByRewriter.cs" />
     <Compile Include="Linq\GroupJoin\AggregatingGroupJoinRewriter.cs" />
     <Compile Include="Linq\ResultOperators\ClientSideTransformOperator.cs" />
